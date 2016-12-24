@@ -1,40 +1,40 @@
 _08000338:
-     push    r14                                     ;13 2294
-     mov     r1,80h                                  ;3  2297
-     lsl     r1,r1,12h                               ;3  2300
-     ldr     r0,=7ED7F420h                           ;12 2312
-     str     r0,[r1]                                 ;6  2318
-     mov     r0,0h                                   ;3  2321
-     str     r0,[r1,2Ch]                             ;6  2327
-     mov     r2,6h                                   ;3  2330
-     str     r2,[r1,30h]                             ;6  2336
-     mov     r0,1h                                   ;3  2339
-     str     r0,[r1,34h]                             ;6  2345
-     str     r0,[r1,38h]                             ;6  2351
-     str     r2,[r1,3Ch]                             ;6  2357
-     mov     r0,8h                                   ;3  2360
-     str     r0,[r1,40h]                             ;6  2366
-     mov     r0,1Fh                                  ;3  2369
-     str     r0,[r1,44h]                             ;6  2375
-     mov     r2,0h                                   ;3  2378
-     mov     r1,9h                                   ;3  2381
-     ldr     r0,=2000028h                            ;12 2393
-     str     r2,[r0]                                 ;15 2408
-     sub     r0,4h                                   ;3  2411
-     sub     r1,1h                                   ;3  2414
-     cmp     r1,0h                                   ;3  2417
-     bge     8000360h                                ;11 2428
-     pop     r0                                      ;12 2440
-     bx      r0                                      ;11 2451
+     push    r14
+     mov     r1,80h
+     lsl     r1,r1,12h
+     ldr     r0,=7ED7F420h
+     str     r0,[r1]
+     mov     r0,0h
+     str     r0,[r1,2Ch]
+     mov     r2,6h
+     str     r2,[r1,30h]
+     mov     r0,1h
+     str     r0,[r1,34h]
+     str     r0,[r1,38h]
+     str     r2,[r1,3Ch]
+     mov     r0,8h
+     str     r0,[r1,40h]
+     mov     r0,1Fh
+     str     r0,[r1,44h]
+     mov     r2,0h
+     mov     r1,9h
+     ldr     r0,=2000028h
+     str     r2,[r0]
+     sub     r0,4h
+     sub     r1,1h
+     cmp     r1,0h
+     bge     8000360h
+     pop     r0
+     bx      r0
  Stop_Distrib: @ 8000378
-     push    r14                                     ;6  2485
-     mov     r0,80h                                  ;3  2488
-     lsl     r0,r0,12h                               ;3  2491
-     ldr     r1,[r0]                                 ;14 2505
-     ldr     r0,=7ED7F420h                           ;12 2517
-     cmp     r1,r0                                   ;3  2520
-     beq     800038Ah                                ;11 2531
-     bl      8000338h                                ;14 2545
+     push    r14
+     mov     r0,80h
+     lsl     r0,r0,12h
+     ldr     r1,[r0]
+     ldr     r0,=7ED7F420h
+     cmp     r1,r0
+     beq     800038Ah
+     bl      8000338h
 _0800038A:
-     pop     r0                                      ;12 2557
-     bx      r0                                      ;11 2568
+     pop     r0
+     bx      r0
