@@ -1,0 +1,23 @@
+gTransmitting_Data: @ 300000C
+        .space 0x1
+        
+gFrame_Counter: @ 3000028
+        .space 0x4
+
+gDate: @ 3000248
+        .space 0x4
+
+gTime: @ 300024C
+        .space 0x4
+
+gButton_Pressed: @ 3000AAC
+        .space 0x1
+
+gCursor_Position: @ 3007EC0
+        .space 0x1
+
+gPokemon_Selected: @ 3007EC4
+        .space 0x1
+
+gCurrent_Screen: @ 3007ECC
+        .space 0x1
