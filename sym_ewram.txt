@@ -1,0 +1,29 @@
+gUnknown_02000000: @ 2000000
+        .space 0x4
+
+gChannel: @ 2000004
+        .space 0x4
+
+gUnknown_02000030: @ 2000030
+        .space 0x4
+
+gUnknown_02000034: @ 2000034
+        .space 0x4
+
+gUnknown_02000038: @ 2000038
+        .space 0x4
+
+gUnknown_0200003C: @ 200003C
+        .space 0x4
+
+gUnknown_02000040: @ 2000040
+        .space 0x4
+
+gUnknown_02000044: @ 2000044
+        .space 0x4
+
+gUnknown_02000048: @ 2000048
+        .space 0x4
+
+gUnknown_0200004C: @ 200004C
+        .space 0x4
